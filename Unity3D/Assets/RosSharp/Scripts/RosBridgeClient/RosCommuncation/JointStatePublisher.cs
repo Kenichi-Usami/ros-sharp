@@ -59,12 +59,15 @@ namespace RosSharp.RosBridgeClient
 
         private void UpdateJointState(int i)
         {
+            float position;
+            float velocity;
+            float effort;
 
             JointStateReaders[i].Read(
                 out message.name[i],
-                out float position,
-                out float velocity,
-                out float effort);
+                out position,
+                out velocity,
+                out effort);
 
             message.position[i] = position;
             message.velocity[i] = velocity;
