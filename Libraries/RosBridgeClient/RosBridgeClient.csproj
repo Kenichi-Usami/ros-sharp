@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RosBridgeClient</RootNamespace>
     <AssemblyName>RosBridgeClient</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -103,6 +103,111 @@
     <Compile Include="UrdfTransfer\UrdfTransfer.cs" />
     <Compile Include="UrdfTransfer\UrdfTransferFromRos.cs" />
     <Compile Include="UrdfTransfer\UrdfTransferToRos.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GetMapActionFeedback.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GetMapActionGoal.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GetMapActionResult.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GetMapFeedback.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GetMapGoal.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GetMapResult.cs" />
+    <Compile Include="GeneratedMessages\Navigation\GridCells.cs" />
+    <Compile Include="GeneratedMessages\Navigation\Path.cs" />
+    <Compile Include="GeneratedMessages\Standard\Byte.cs" />
+    <Compile Include="GeneratedMessages\Standard\ByteMultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\Char.cs" />
+    <Compile Include="GeneratedMessages\Standard\ColorRGBA.cs" />
+    <Compile Include="GeneratedMessages\Standard\Empty.cs" />
+    <Compile Include="GeneratedMessages\Standard\Float32.cs" />
+    <Compile Include="GeneratedMessages\Standard\Float32MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\Float64MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int16.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int16MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int32MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int64.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int64MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int8.cs" />
+    <Compile Include="GeneratedMessages\Standard\Int8MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\MultiArrayDimension.cs" />
+    <Compile Include="GeneratedMessages\Standard\MultiArrayLayout.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt16.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt16MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt32.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt32MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt64.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt64MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt8.cs" />
+    <Compile Include="GeneratedMessages\Standard\UInt8MultiArray.cs" />
+    <Compile Include="GeneratedMessages\Sensor\BatteryState.cs" />
+    <Compile Include="GeneratedMessages\Sensor\CameraInfo.cs" />
+    <Compile Include="GeneratedMessages\Sensor\ChannelFloat32.cs" />
+    <Compile Include="GeneratedMessages\Sensor\FluidPressure.cs" />
+    <Compile Include="GeneratedMessages\Sensor\Illuminance.cs" />
+    <Compile Include="GeneratedMessages\Sensor\Imu.cs" />
+    <Compile Include="GeneratedMessages\Sensor\JoyFeedback.cs" />
+    <Compile Include="GeneratedMessages\Sensor\JoyFeedbackArray.cs" />
+    <Compile Include="GeneratedMessages\Sensor\LaserEcho.cs" />
+    <Compile Include="GeneratedMessages\Sensor\MagneticField.cs" />
+    <Compile Include="GeneratedMessages\Sensor\MultiDOFJointState.cs" />
+    <Compile Include="GeneratedMessages\Sensor\MultiEchoLaserScan.cs" />
+    <Compile Include="GeneratedMessages\Sensor\NavSatFix.cs" />
+    <Compile Include="GeneratedMessages\Sensor\NavSatStatus.cs" />
+    <Compile Include="GeneratedMessages\Sensor\PointCloud.cs" />
+    <Compile Include="GeneratedMessages\Sensor\Range.cs" />
+    <Compile Include="GeneratedMessages\Sensor\RegionOfInterest.cs" />
+    <Compile Include="GeneratedMessages\Sensor\RelativeHumidity.cs" />
+    <Compile Include="GeneratedMessages\Sensor\Temperature.cs" />
+    <Compile Include="GeneratedMessages\Sensor\TimeReference.cs" />
+    <Compile Include="GeneratedMessages\Geometry\AccelStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\AccelWithCovariance.cs" />
+    <Compile Include="GeneratedMessages\Geometry\AccelWithCovarianceStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Inertia.cs" />
+    <Compile Include="GeneratedMessages\Geometry\InertiaStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Point32.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Polygon.cs" />
+    <Compile Include="GeneratedMessages\Geometry\PolygonStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Pose2D.cs" />
+    <Compile Include="GeneratedMessages\Geometry\PoseArray.cs" />
+    <Compile Include="GeneratedMessages\Geometry\PoseWithCovarianceStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\QuaternionStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Transform.cs" />
+    <Compile Include="GeneratedMessages\Geometry\TransformStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\TwistStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\TwistWithCovarianceStamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Vector3Stamped.cs" />
+    <Compile Include="GeneratedMessages\Geometry\Wrench.cs" />
+    <Compile Include="GeneratedMessages\Geometry\WrenchStamped.cs" />
+    <Compile Include="GeneratedMessages\Visualization\ImageMarker.cs" />
+    <Compile Include="GeneratedMessages\Visualization\InteractiveMarker.cs" />
+    <Compile Include="GeneratedMessages\Visualization\InteractiveMarkerControl.cs" />
+    <Compile Include="GeneratedMessages\Visualization\InteractiveMarkerFeedback.cs" />
+    <Compile Include="GeneratedMessages\Visualization\InteractiveMarkerInit.cs" />
+    <Compile Include="GeneratedMessages\Visualization\InteractiveMarkerPose.cs" />
+    <Compile Include="GeneratedMessages\Visualization\InteractiveMarkerUpdate.cs" />
+    <Compile Include="GeneratedMessages\Visualization\Marker.cs" />
+    <Compile Include="GeneratedMessages\Visualization\MarkerArray.cs" />
+    <Compile Include="GeneratedMessages\Visualization\MenuEntry.cs" />
+    <Compile Include="GeneratedMessages\Gitai\Audio.cs" />
+    <Compile Include="GeneratedMessages\Gitai\CompressedAudio.cs" />
+    <Compile Include="GeneratedMessages\Gitai\ComputerInformation.cs" />
+    <Compile Include="GeneratedMessages\Gitai\ControllerReadProfile.cs" />
+    <Compile Include="GeneratedMessages\Gitai\ControllerWriteProfile.cs" />
+    <Compile Include="GeneratedMessages\Gitai\DynamixelHardwareErrorStatus.cs" />
+    <Compile Include="GeneratedMessages\Gitai\DynamixelRamData.cs" />
+    <Compile Include="GeneratedMessages\Gitai\DynamixelState.cs" />
+    <Compile Include="GeneratedMessages\Gitai\EffortCommand.cs" />
+    <Compile Include="GeneratedMessages\Gitai\EyeCaptureProfile.cs" />
+    <Compile Include="GeneratedMessages\Gitai\EyeConfigState.cs" />
+    <Compile Include="GeneratedMessages\Gitai\EyePublisherProfile.cs" />
+    <Compile Include="GeneratedMessages\Gitai\EyeStreamingProfile.cs" />
+    <Compile Include="GeneratedMessages\Gitai\EyeViewPoint.cs" />
+    <Compile Include="GeneratedMessages\Gitai\FootPedal.cs" />
+    <Compile Include="GeneratedMessages\Gitai\InfluxdbBridgeProfile.cs" />
+    <Compile Include="GeneratedMessages\Gitai\OmniWheelDriverState.cs" />
+    <Compile Include="GeneratedMessages\Gitai\RunMode.cs" />
+    <Compile Include="GeneratedMessages\Gitai\TemperatureState.cs" />
+    <Compile Include="GeneratedMessages\Gitai\TorqueState.cs" />
+    <Compile Include="GeneratedMessages\Gitai\TransferAddress.cs" />
+    <Compile Include="GeneratedMessages\Gitai\TransferConfigState.cs" />
+    <Compile Include="GeneratedMessages\Duration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
