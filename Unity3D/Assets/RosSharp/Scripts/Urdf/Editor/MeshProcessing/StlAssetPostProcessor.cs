@@ -22,6 +22,31 @@ using System.IO;
 
 namespace RosSharp
 {
+
+    //// Modifyed by Usami
+    //// At 20190425
+    [InitializeOnLoad]
+    public class Startup {
+        static Startup()
+        {
+            if (Application.isEditor)
+            {
+                string gitai_description_dir = Application.dataPath + "/Models/gitai_description";
+                string[] filePaths = Directory.GetFiles(gitai_description_dir + "/", "*.stl", System.IO.SearchOption.AllDirectories);
+                foreach(string f in filePaths)
+                {
+                    string file = f.Replace("\\","/");
+                    string stlFile = "Assets" + file.Replace(Application.dataPath,"");
+                    string prefabPath = file.Substring(0, file.Length - 4) + ".prefab";
+                    if(!System.IO.File.Exists(prefabPath))
+                    {
+                        StlAssetPostProcessor.createStlPrefab(stlFile);
+                    }
+                }
+            }
+        }
+    }
+
     public class StlAssetPostProcessor : AssetPostprocessor
     {
         private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromPath)
@@ -30,7 +55,10 @@ namespace RosSharp
                 createStlPrefab(stlFile);
         }
 
-        private static void createStlPrefab(string stlFile)
+        //// Modifyed by Usami
+        //// At 20190425
+        //// Detail: `private` to `public`
+        public static void createStlPrefab(string stlFile)
         {
             GameObject gameObject = CreateStlParent(stlFile);
             if (gameObject == null)
